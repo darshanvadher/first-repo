@@ -1,0 +1,132 @@
+/* Basic form styling */
+#car-entry-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#car-entry-form .form-field {
+    margin-bottom: 15px;
+}
+
+#car-entry-form .form-field label.error{
+    color: red;
+    font-weight: 300;
+}
+
+#car-entry-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#car-entry-form input[type="text"],
+#car-entry-form select,
+#car-entry-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#car-entry-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+#car-entry-form input[type="submit"] {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#car-entry-form input[type="submit"]:hover {
+    background-color: #005a87;
+}
+
+#car-entry-form select {
+    height: 45px;
+}
+
+#car-entry-form .form-field input[type="file"] {
+    padding: 3px;
+}
+
+#car-entry-form .form-field input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#car-entry-form .form-field label[for^="fuel_type_"] {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.cars-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.car-item {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.car-image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.car-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car-details {
+    flex: 2;
+}
+
+.car-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.car-details p {
+    margin: 0 0 5px;
+    font-size: 1rem;
+}
+
+/* Loader styling */
+.car-loader {
+    border: 4px solid #f3f3f3; /* Light gray */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
