@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Car Management
+ * Plugin Name: Car Management test
  * Plugin URI: https://addwebsolution.com
  * Description: This is for car Management.
  * Version: 1.0
